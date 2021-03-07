@@ -35,35 +35,10 @@
             android:orientation="vertical">
             
             <include
-                android:id="@+id/include"
-                layout="@layout/category2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                layout="@layout/category"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
 
-            <include
-                layout="@layout/category2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <include
-                layout="@layout/category2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <include
-                layout="@layout/category2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <include
-                layout="@layout/category2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <include
-                layout="@layout/category2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
         </LinearLayout>
     </ScrollView>
 
