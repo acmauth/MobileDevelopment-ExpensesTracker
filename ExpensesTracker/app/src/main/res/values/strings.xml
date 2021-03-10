@@ -16,5 +16,8 @@
     <string name="per_week">Per Week</string>
     <string name="per_month">Per Month</string>
     <string name="initial_budget">Initial Budget</string>
+    <string name="amount">Amount</string>
+    <string name="comment">Comment</string>
+    <string name="make_transaction">make transaction</string>
 
 </resources>
