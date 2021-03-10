@@ -11,7 +11,13 @@
     <string name="shopping_category">Shopping</string>
     <string name="entertainment_category">Entertainment</string>
     <string name="investments_category">Investments</string>
-
-
+    <string name="name">Name</string>
+    <string name="budget">Budget</string>
+    <string name="per_week">Per Week</string>
+    <string name="per_month">Per Month</string>
+    <string name="initial_budget">Initial Budget</string>
+    <string name="amount">Amount</string>
+    <string name="comment">Comment</string>
+    <string name="make_transaction">make transaction</string>
 
 </resources>
