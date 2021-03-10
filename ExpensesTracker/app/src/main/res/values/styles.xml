@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Style for top TextView title-->
+    <style name="TitleTextView">
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/purple_700</item>
+    </style>
+
+    <!-- Style for each button in categories-->
+    <style name="CategoryButton">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- Style of TextViews in total_spend_activity-->
+    <style name="CategoryTextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-black</item>
+    </style>
+
+</resources>

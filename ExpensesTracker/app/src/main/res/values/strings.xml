@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Expenses Tracker</string>
+
+
+    <!-- Top titles -->
+    <string name="title">Title</string>
+
+    <!-- Category Names -->
+    <string name="food_category">Food</string>
+    <string name="drink_category">Drinks</string>
+    <string name="shopping_category">Shopping</string>
+    <string name="entertainment_category">Entertainment</string>
+    <string name="investments_category">Investments</string>
+
+
+
 </resources>
