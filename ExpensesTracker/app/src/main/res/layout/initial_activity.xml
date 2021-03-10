@@ -11,8 +11,7 @@
         android:layout_width="79dp"
         android:layout_height="27dp"
         android:layout_marginTop="132dp"
-        android:autoSizeTextType="uniform"
-        android:text="Όνομα"
+        android:text="@string/name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,6 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:hint="@string/name"
+        android:autofillHints="@string/name"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,8 +36,7 @@
         android:layout_width="79dp"
         android:layout_height="27dp"
         android:layout_marginTop="28dp"
-        android:autoSizeTextType="uniform"
-        android:text="Budget"
+        android:text="@string/budget"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,13 +47,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.041"
+        android:hint="@string/initial_budget"
+        android:autofillHints="@string/initial_budget"/>
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -69,13 +71,13 @@
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Per Week" />
+            android:text="@string/per_week" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Per Month" />
+            android:text="@string/per_month" />
 
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
