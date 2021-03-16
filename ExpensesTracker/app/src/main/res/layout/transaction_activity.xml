@@ -22,6 +22,7 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <EditText
+        style="@style/app_text_appearance"
         android:id="@+id/editTextTransactionComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTransactionAmount" />
 
     <Button
+        style="@style/app_text_appearance"
         android:id="@+id/buttonTransaction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

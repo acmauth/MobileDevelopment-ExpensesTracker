@@ -18,6 +18,7 @@
     <string name="initial_budget">Initial Budget</string>
     <string name="amount">Amount</string>
     <string name="comment">Comment</string>
-    <string name="make_transaction">make transaction</string>
+    <string name="make_transaction">Make transaction</string>
+
 
 </resources>
