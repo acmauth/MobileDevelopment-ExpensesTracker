@@ -1,9 +1,12 @@
 <resources>
+
     <string name="app_name">Expenses Tracker</string>
 
 
     <!-- Top titles -->
-    <string name="title">Title</string>
+    <string name="transaction_categories_title">Transaction Categories</string>
+    <string name="money_spent_each_category_title">Money Spent</string>
+    <string name="transaction_title">Transaction</string>
 
     <!-- Category Names -->
     <string name="food_category">Food</string>
@@ -11,11 +14,20 @@
     <string name="shopping_category">Shopping</string>
     <string name="entertainment_category">Entertainment</string>
     <string name="investments_category">Investments</string>
+
+    <!-- Transaction Types -->
+    <string name="type_collection">Collections</string>
+    <string name="type_purchase">Purchases</string>
+    <string name="collection_button">Add Money</string>
+
+    <!-- Initial Activity Strings -->
     <string name="name">Name</string>
     <string name="budget">Budget</string>
     <string name="per_week">Per Week</string>
     <string name="per_month">Per Month</string>
     <string name="initial_budget">Initial Budget</string>
+
+    <!-- Transaction Activity Strings -->
     <string name="amount">Amount</string>
     <string name="comment">Comment</string>
     <string name="make_transaction">Make transaction</string>

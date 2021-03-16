@@ -3,86 +3,59 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/gray_50">
 
     <TextView
+        style="@style/CategoryTextView"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="12dp"
-        android:textAlignment="center"
         android:text="@string/food_category"
-        style="@style/CategoryTextView"/>
+        android:layout_marginTop="16dp"
+        />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="22dp"
-        android:textAlignment="center"
         android:text="$200"
-        style="@style/CategoryTextView"/>
+        style="@style/MoneySpentTextView"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="42dp"
-        android:textAlignment="center"
         android:text="@string/drink_category"
         style="@style/CategoryTextView"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="22dp"
-        android:textAlignment="center"
         android:text="$200"
-        style="@style/CategoryTextView"/>
+        style="@style/MoneySpentTextView"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="42dp"
-        android:textAlignment="center"
         android:text="@string/shopping_category"
         style="@style/CategoryTextView"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="22dp"
-        android:textAlignment="center"
         android:text="$200"
-        style="@style/CategoryTextView"/>
+        style="@style/MoneySpentTextView"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="42dp"
-        android:textAlignment="center"
         android:text="@string/entertainment_category"
         style="@style/CategoryTextView"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="22dp"
-        android:textAlignment="center"
         android:text="$200"
-        style="@style/CategoryTextView"/>
+        style="@style/MoneySpentTextView"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="42dp"
-        android:textAlignment="center"
         android:text="@string/investments_category"
         style="@style/CategoryTextView"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="22dp"
-        android:textAlignment="center"
         android:text="$200"
-        style="@style/CategoryTextView"/>
+        style="@style/MoneySpentTextView"/>
 
 </LinearLayout>
