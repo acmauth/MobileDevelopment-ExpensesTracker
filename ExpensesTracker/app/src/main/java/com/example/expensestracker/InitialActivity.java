@@ -1,9 +1,11 @@
 package com.example.expensestracker;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,13 +14,18 @@ public class InitialActivity extends AppCompatActivity {
 
     private Button submitButton;
     private String name;
-    private String budget;
+    private double budget;
     private String periodSelection;
-    // create field for initial budget
+    private boolean options = false;
 
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
+
+            if (options){
+                openCategoriesActivity();
+            }
+
             super.onCreate(savedInstanceState);
             setContentView(R.layout.initial_activity);
 
@@ -28,19 +35,74 @@ public class InitialActivity extends AppCompatActivity {
                 public void onClick(View view) {
 
                     if (allFieldsFilled()){
-                        setName();
-                        setPeriodSelection();
-                        // Antonis invoke the method that set the Budget
                         openCategoriesActivity();
-                    }
-                    else {
-                        //popup message at Text Views that is required
                     }
 
                 }
             });
         }
 
+        public boolean setName(){
+            TextView nameTextView = findViewById(R.id.nameTextView);
+            name = nameTextView.getText().toString();
+            return true;
+        }
+
+        public boolean setBudget(){
+
+            String budget;
+            TextView budgetTextView = findViewById(R.id.budgetTextView);
+            budget = budgetTextView.getText().toString();
+
+            try {
+                this.budget = Double.parseDouble(budget);
+            }
+            catch (NumberFormatException nfe){
+                budgetTextView.setHint("*Required Field");
+                budgetTextView.setHintTextColor(Color.RED);
+                budgetTextView.setText("");
+                return false;
+            }
+
+            return true;
+
+        }
+
+        public boolean setPeriodSelection(){
+
+            RadioButton monthRadioButton = findViewById(R.id.monthRadioButton);
+            RadioButton weekRadioButton = findViewById(R.id.weekRadioButton);
+
+            if (monthRadioButton.isChecked()){
+                periodSelection = "month";
+            }
+            else if (weekRadioButton.isChecked()){
+                periodSelection = "week";
+            }
+            else {
+                TextView textView = findViewById(R.id.warnChoices);
+                textView.setVisibility(View.VISIBLE);
+                return false;
+            }
+
+            return true;
+        }
+
+        public boolean allFieldsFilled(){
+            if (!setName()){
+                return false;
+            }
+            if (!setBudget()){
+                return false;
+            }
+            if (!setPeriodSelection()){
+                return false;
+            }
+
+            options = true;
+
+            return true;
+        }
 
 
         public void openCategoriesActivity(){
@@ -48,31 +110,5 @@ public class InitialActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-        public void setName(){
-            TextView nameTextView = findViewById(R.id.nameTextView);
-            name = nameTextView.getText().toString();
-        }
-
-        // Antonis
-        public void setBudget(){}
-
-        public void setPeriodSelection(){
-
-            Button monthRadioButton = findViewById(R.id.monthRadioButton);
-            Button weekRadioButton = findViewById(R.id.weekRadioButton);
-
-            if (monthRadioButton.isSelected()){
-                periodSelection = "month";
-            }
-            else if (weekRadioButton.isSelected()){
-                periodSelection = "week";
-            }
-
-        }
-
-        public boolean allFieldsFilled(){
-            // this needs to be done
-            return true;
-        }
 
 }
