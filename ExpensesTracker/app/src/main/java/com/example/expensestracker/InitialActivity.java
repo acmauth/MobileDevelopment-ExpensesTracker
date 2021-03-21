@@ -16,15 +16,10 @@ public class InitialActivity extends AppCompatActivity {
     private String name;
     private double budget;
     private String periodSelection;
-    private boolean options = false;
 
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
-
-            if (options){
-                openCategoriesActivity();
-            }
 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.initial_activity);
@@ -98,8 +93,6 @@ public class InitialActivity extends AppCompatActivity {
             if (!setPeriodSelection()){
                 return false;
             }
-
-            options = true;
 
             return true;
         }
