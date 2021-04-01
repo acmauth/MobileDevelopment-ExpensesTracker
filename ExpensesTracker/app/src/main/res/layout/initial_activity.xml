@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     android:background="@color/gray_50"
-    tools:context=".MainActivity">
+    tools:context=".InitialActivity">
 
     <TextView
         style="@style/InitialTextViews"
@@ -20,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nameTextView"
         style="@style/app_text_appearance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/budgetTextView"
         style="@style/app_text_appearance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,14 +58,36 @@
         android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/initial_budget"
-        android:inputType="number"
+        android:inputType="numberSigned|text|numberDecimal"
         android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.062" />
+
+    <EditText
+        android:id="@+id/warnChoices"
+        style="@style/app_text_appearance"
+        android:layout_width="212dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="@string/warning"
+        android:textColor="#F44336"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton"
+        app:layout_constraintVertical_bias="0.705" />
 
     <RadioGroup
         style="@style/app_text_appearance"
@@ -75,10 +98,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" >
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" >
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/weekRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -86,12 +109,23 @@
             android:text="@string/per_week" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/monthRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:buttonTint="@color/orange_300"
             android:text="@string/per_month" />
-
     </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budgetTextView"
+        app:layout_constraintVertical_bias="0.112" />
 </androidx.constraintlayout.widget.ConstraintLayout>
