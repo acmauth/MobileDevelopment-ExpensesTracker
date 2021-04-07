@@ -26,13 +26,7 @@ public class TransactionCategoriesActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.transaction_categories_activity);
 
-        this.getWindow().getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        ScreenController.remove_ui_header(this);
 
         TextView textView = findViewById(R.id.title_of_top_bar); // gets TextView (top bar title)
         textView.setText(R.string.transaction_categories_title); // sets title for top bar

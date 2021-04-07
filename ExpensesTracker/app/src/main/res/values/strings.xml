@@ -26,6 +26,8 @@
     <string name="per_week">Per Week</string>
     <string name="per_month">Per Month</string>
     <string name="initial_budget">Initial Budget</string>
+    <string name="submit">Submit</string>
+    <string name="warning">Warning</string>
 
     <!-- Transaction Activity Strings -->
     <string name="amount">Amount</string>

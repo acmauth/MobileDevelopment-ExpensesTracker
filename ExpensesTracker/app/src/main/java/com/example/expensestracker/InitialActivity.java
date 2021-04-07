@@ -25,13 +25,15 @@ public class InitialActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.initial_activity);
 
+        ScreenController.remove_ui_header(this);
+
         submitButton = (Button) findViewById(R.id.submitButton);
         submitButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
 
                 if (allFieldsFilled()){
-
+                    openCategoriesActivity();
                 }
 
             }
@@ -99,7 +101,7 @@ public class InitialActivity extends AppCompatActivity {
 
 
     public void openCategoriesActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, TransactionCategoriesActivity.class);
         startActivity(intent);
     }
 
