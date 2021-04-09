@@ -10,6 +10,12 @@ import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * This class is the backend of the initial_activity.xml. It is used for the user to input his budget
+ * goals and other personal info. It is called during the 1st initial start of the app and afterwards
+ * it can be changed through the (???)
+ */
+//TODO have options in other menus to access this activity if user needs to change the budget goals
 public class InitialActivity extends AppCompatActivity {
 
     private Button submitButton;
@@ -86,6 +92,9 @@ public class InitialActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * This method is used to check whether the user input is valid
+     */
     public boolean allFieldsFilled(){
         if (!setName()){
             return false;
@@ -99,7 +108,9 @@ public class InitialActivity extends AppCompatActivity {
         return true;
     }
 
-
+    /**
+     * This method starts a new activity
+     */
     public void openCategoriesActivity(){
         Intent intent = new Intent(this, TransactionCategoriesActivity.class);
         startActivity(intent);

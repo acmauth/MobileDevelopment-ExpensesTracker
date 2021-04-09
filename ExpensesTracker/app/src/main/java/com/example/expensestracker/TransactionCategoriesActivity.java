@@ -15,6 +15,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//TODO a connection with InitialActivity must also be implemented
+
 public class TransactionCategoriesActivity extends AppCompatActivity{
 
     // Categories name
@@ -65,7 +67,7 @@ public class TransactionCategoriesActivity extends AppCompatActivity{
 
     }
 
-
+    //TODO This is implemented in many classes. Maybe do this as an extra class?? See ScreenController
     @SuppressLint("NonConstantResourceId")
     public void menuChange (View v){
         Intent intent;
