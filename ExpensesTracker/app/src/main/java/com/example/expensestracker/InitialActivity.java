@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
  * goals and other personal info. It is called during the 1st initial start of the app and afterwards
  * it can be changed through the (???)
  */
-//TODO have options in other menus to access this activity if user needs to change the budget goals
 public class InitialActivity extends AppCompatActivity {
 
     private Button submitButton;

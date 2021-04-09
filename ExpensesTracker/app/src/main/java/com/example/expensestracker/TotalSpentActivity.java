@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 public class TotalSpentActivity extends AppCompatActivity {
 
-    //TODO make fields for each category
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
