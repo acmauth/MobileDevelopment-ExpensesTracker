@@ -5,9 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
+<<<<<<< HEAD
+=======
+    android:background="@color/gray_50"
+>>>>>>> main
     tools:context=".InitialActivity">
 
     <TextView
+        style="@style/InitialTextViews"
         android:id="@+id/textView"
         android:layout_width="79dp"
         android:layout_height="27dp"
@@ -20,19 +25,26 @@
 
     <EditText
         android:id="@+id/nameTextView"
+<<<<<<< HEAD
+=======
+        style="@style/app_text_appearance"
+>>>>>>> main
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:autofillHints="@string/name"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
+        style="@style/InitialTextViews"
         android:id="@+id/textView2"
         android:layout_width="79dp"
         android:layout_height="27dp"
@@ -45,6 +57,7 @@
 
     <EditText
         android:id="@+id/budgetTextView"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -52,12 +65,52 @@
         android:ems="10"
         android:hint="@string/initial_budget"
         android:inputType="numberSigned|text|numberDecimal"
+=======
+        style="@style/app_text_appearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/initial_budget"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/initial_budget"
+        android:inputType="numberSigned|text|numberDecimal"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+>>>>>>> main
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+=======
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <EditText
+        android:id="@+id/warnChoices"
+        style="@style/app_text_appearance"
+        android:layout_width="212dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="@string/warning"
+        android:textColor="#F44336"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton"
+        app:layout_constraintVertical_bias="0.705" />
+>>>>>>> main
 
     <RadioGroup
+        style="@style/app_text_appearance"
         android:id="@+id/radioGroup"
         android:layout_width="172dp"
         android:layout_height="121dp"
@@ -65,26 +118,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/nameTextView">
+=======
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" >
+>>>>>>> main
 
         <RadioButton
             android:id="@+id/weekRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/orange_300"
             android:text="@string/per_week" />
 
         <RadioButton
             android:id="@+id/monthRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:buttonTint="@color/orange_300"
             android:text="@string/per_month" />
-
     </RadioGroup>
 
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="20dp"
         android:text="@string/submit"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,4 +170,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/submitButton"
         app:layout_constraintVertical_bias="0.705" />
+=======
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budgetTextView"
+        app:layout_constraintVertical_bias="0.112" />
+>>>>>>> main
 </androidx.constraintlayout.widget.ConstraintLayout>
