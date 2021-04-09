@@ -68,6 +68,7 @@ public class TransactionCategoriesActivity extends AppCompatActivity{
     }
 
     //TODO This is implemented in many classes. Maybe do this as an extra class?? See ScreenController
+    //TODO also maybe make this so it does not creating a new Intent if its already in this one
     @SuppressLint("NonConstantResourceId")
     public void menuChange (View v){
         Intent intent;
