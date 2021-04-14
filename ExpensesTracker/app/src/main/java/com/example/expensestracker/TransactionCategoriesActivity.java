@@ -81,7 +81,8 @@ public class TransactionCategoriesActivity extends AppCompatActivity{
                 break;
 
             case R.id.graph_button:
-                //
+                intent = new Intent(v.getContext(), GraphActivity.class);
+                startActivity(intent);
                 break;
         }
 

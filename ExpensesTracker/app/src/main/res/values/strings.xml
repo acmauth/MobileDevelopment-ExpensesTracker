@@ -33,5 +33,7 @@
     <string name="amount">Amount</string>
     <string name="comment">Comment</string>
     <string name="make_transaction">Make transaction</string>
+    <string name="enter_money">enter money</string>
+    <string name="button">button</string>
 
 </resources>
