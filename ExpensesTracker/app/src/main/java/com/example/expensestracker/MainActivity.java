@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // TODO Check in DB if user already registered before moving to initial,
         // otherwise move to transaction categories Activity
-        Intent intent = new Intent(this, InitialActivity.class);
+        Intent intent = new Intent(this, DBAmounts.class);
         startActivity(intent);
     }
 }

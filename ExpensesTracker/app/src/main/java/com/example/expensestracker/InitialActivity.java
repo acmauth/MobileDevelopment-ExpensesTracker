@@ -111,7 +111,7 @@ public class InitialActivity extends AppCompatActivity {
      * This method starts a new activity
      */
     public void openCategoriesActivity(){
-        Intent intent = new Intent(this, TransactionCategoriesActivity.class);
+        Intent intent = new Intent(this, DBAmounts.class);
         startActivity(intent);
     }
 
