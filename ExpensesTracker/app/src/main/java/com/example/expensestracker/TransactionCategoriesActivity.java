@@ -104,6 +104,13 @@ public class TransactionCategoriesActivity extends AppCompatActivity{
         View dialogView = inflater.inflate(R.layout.add_category_dialog, null);
         EditText editText = dialogView.findViewById(R.id.give_category_name_EditText);
 
+
+            case R.id.graph_button:
+                intent = new Intent(v.getContext(), GraphActivity.class);
+                startActivity(intent);
+                break;
+        }
+
         builder.setView(dialogView)
                 .setTitle("Create a new category")
                 .setPositiveButton("Submit", (dialog, which) -> {
