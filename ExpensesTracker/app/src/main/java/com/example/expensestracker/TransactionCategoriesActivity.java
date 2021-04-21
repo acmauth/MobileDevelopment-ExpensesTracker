@@ -54,7 +54,8 @@ public class TransactionCategoriesActivity extends AppCompatActivity{
                 break;
 
             case R.id.graph_button:
-                //
+                intent = new Intent(v.getContext(), GraphActivity.class);
+                startActivity(intent);
                 break;
         }
 
@@ -103,13 +104,6 @@ public class TransactionCategoriesActivity extends AppCompatActivity{
         LayoutInflater inflater = this.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.add_category_dialog, null);
         EditText editText = dialogView.findViewById(R.id.give_category_name_EditText);
-
-
-            case R.id.graph_button:
-                intent = new Intent(v.getContext(), GraphActivity.class);
-                startActivity(intent);
-                break;
-        }
 
         builder.setView(dialogView)
                 .setTitle("Create a new category")

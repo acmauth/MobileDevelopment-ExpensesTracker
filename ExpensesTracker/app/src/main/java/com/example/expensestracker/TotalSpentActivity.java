@@ -24,22 +24,7 @@ public class TotalSpentActivity extends AppCompatActivity {
 
     @SuppressLint("NonConstantResourceId")
     public void menuChange (View v){
-        Intent intent;
-        switch (v.getId()) {
-            case R.id.categories_button:
-                intent = new Intent(v.getContext(), TransactionCategoriesActivity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.money_spent_button:
-                intent = new Intent(v.getContext(), TotalSpentActivity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.graph_button:
-                //
-                break;
-        }
-
+        Intent intent = ScreenController.get_intent_from_menu(v);
+        startActivity(intent);
     }
 }

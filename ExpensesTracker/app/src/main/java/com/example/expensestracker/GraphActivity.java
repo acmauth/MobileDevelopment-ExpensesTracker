@@ -3,6 +3,7 @@ package com.example.expensestracker;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -40,6 +41,8 @@ public class GraphActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph);
 
+        ScreenController.remove_ui_header(this);
+
         insertButton = (Button) findViewById(R.id.insertButton);
         inputTextY = (EditText) findViewById(R.id.inputTextY);
         graphView = (GraphView) findViewById(R.id.graph);
@@ -53,10 +56,15 @@ public class GraphActivity extends AppCompatActivity {
         //Xromata
         //dataseries.setColor(Color.argb(226, 91,34)); Xrwma grammon
         //dataseries.setThickness(6); poso lepti tha einai i grammi
-        dataseries.setDrawBackground(true);
-        graphView.setBackgroundColor(Color.argb(50, 50, 0, 200));
-        dataseries.setBackgroundColor(Color.argb(60, 95, 226, 156));
+
+//        TODO FIX THE COLORS
+
+         dataseries.setDrawBackground(true);
+//        graphView.setBackgroundColor(Color.argb(50, 50, 0, 200));
+//        dataseries.setBackgroundColor(Color.argb(60, 95, 226, 156));
         dataseries.setDrawDataPoints(true);
+
+
         //dataseries.setDataPointsRadius(8); poso megales na einai i telies
 
 
@@ -119,5 +127,11 @@ public class GraphActivity extends AppCompatActivity {
         }
         Log.i("arithmos", Arrays.toString(dataPoints));
         return dataPoints;
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    public void menuChange (View v){
+        Intent intent = ScreenController.get_intent_from_menu(v);
+        startActivity(intent);
     }
 }
