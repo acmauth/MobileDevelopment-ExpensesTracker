@@ -15,10 +15,12 @@
     <string name="entertainment_category">Entertainment</string>
     <string name="investments_category">Investments</string>
 
-    <!-- Transaction Types -->
+    <!-- Transaction Categories Activity Strings -->
     <string name="type_collection">Collections</string>
     <string name="type_purchase">Purchases</string>
     <string name="collection_button">Add Money</string>
+    <string name="info_btton"> </string>
+    <string name="add_button">+</string>
 
     <!-- Initial Activity Strings -->
     <string name="name">Name</string>
@@ -36,4 +38,10 @@
     <string name="enter_money">enter money</string>
     <string name="button">button</string>
 
+    <!-- Dialog Strings-->
+    <string name="add_dialog_button">add</string>
+    <string name="cancel_dialog_button">Cancel</string>
+    <string name="give_category_textView">Give category name</string>
+    <string name="submit_category_name_button">Submit</string>
+    <string name="category_name_editText">Category name</string>
 </resources>

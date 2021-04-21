@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,6 +11,30 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
+
+    <Button
+        android:id="@+id/add_category_button"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:onClick="addCategory"
+        android:text="@string/add_button"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/info_button"
+        app:layout_constraintTop_toTopOf="@+id/include3"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <Button
+        android:id="@+id/info_button"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:text="@string/info_btton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/include3"
+        app:layout_constraintVertical_bias="0.281" />
 
     <include
         android:id="@+id/include3"
@@ -22,7 +47,6 @@
 
 
     <TextView
-
         style="@style/TransactionType"
         android:id="@+id/textView4"
         android:layout_width="138dp"
