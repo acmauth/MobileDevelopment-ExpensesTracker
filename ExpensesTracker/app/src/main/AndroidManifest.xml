@@ -13,7 +13,7 @@
         <activity android:name=".TransactionActivity" />
         <activity android:name=".TransactionCategoriesActivity" />
         <activity android:name=".TotalSpentActivity" />
-        <activity android:name=".GraphActivity" />
+        <activity android:name=".GraphActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
