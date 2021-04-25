@@ -30,7 +30,7 @@ public class ScreenController {
             break;
 
             case R.id.graph_button:
-                intent = new Intent(v.getContext(), GraphActivity.class);
+                intent = new Intent(v.getContext(), GraphActivity2.class);
             break;
         }
         return intent;

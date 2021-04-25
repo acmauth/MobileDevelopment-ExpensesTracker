@@ -12,8 +12,11 @@ android {
 
         python{
             pip{
+                install "six"
+                install "opencv-contrib-python-headless"
+                install "pillow"
+                install "numpy"
                 install "matplotlib"
-                install "pandas"
             }
         }
 
