@@ -1,5 +1,7 @@
 package com.example.expensestracker;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -59,6 +61,12 @@ public class GraphActivity2 extends AppCompatActivity {
             }
         });
 
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    public void menuChange (View v){
+        Intent intent = ScreenController.get_intent_from_menu(v);
+        startActivity(intent);
     }
 
 }
